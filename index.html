@@ -1,12 +1,18 @@
 <html>
   <head>
     <script src="https://cdn.tryretool.com/embed.js"> </script>
+     <script>
+     const queryString = window.location.search;
+       const urlParams = new URLSearchParams(queryString);
+     const T = urlParams.get('T');
+       const PW = urlParams.get('PW');
+    </script>
   </head>
 
-    <div style="height: 800px; width: 100%;" id='container'></div>
+    <div style="height: 1000px; width: 100%;" id='container'></div>
 
     <script>
-var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://theleadingpractice.retool.com/embedded/public/e7932d5b-e5b1-4fb2-bf5b-61d3aa461f54')
+var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://theleadingpractice.retool.com/embedded/public/e7932d5b-e5b1-4fb2-bf5b-61d3aa461f54?T='+T+'&PW='+PW+'')
     </script>
   </body>
 </html>
