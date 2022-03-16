@@ -5,14 +5,14 @@
      const queryString = window.location.search;
        const urlParams = new URLSearchParams(queryString);
      const T = urlParams.get('T');
-       const PW = urlParams.get('PW');
+       const pw = urlParams.get('pw');
     </script>
   </head>
 
     <div style="height: 1000px; width: 100%;" id='container'></div>
 
     <script>
-var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://theleadingpractice.retool.com/embedded/public/e7932d5b-e5b1-4fb2-bf5b-61d3aa461f54?T='+T+'&PW='+PW)
+var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://theleadingpractice.retool.com/embedded/public/e7932d5b-e5b1-4fb2-bf5b-61d3aa461f54?T='+T+'&pw='+PW)
     </script>
   </body>
 </html>
