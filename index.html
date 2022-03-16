@@ -6,7 +6,7 @@
        const urlParams = new URLSearchParams(queryString);
      const T = urlParams.get('T');
        const pw = urlParams.get('pw');
-       const account = /:\/\/([^\/]+)/.exec(window.location.host)[1];
+       const account = /:\/\/([^\/]+)/.exec(window.location.hostname)[1];
        console.log('console log works');
     </script>
   </head>
